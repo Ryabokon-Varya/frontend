@@ -1,0 +1,261 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Georgia', serif;
+}
+
+@keyframes gradientShift {
+    0% { background-position: 0 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0 50%; }
+}
+
+/* Main Section */
+.main {
+    background: linear-gradient(250deg, plum, purple, slateblue, dodgerblue, midnightblue);
+    background-size: 500% 500%;
+    animation: gradientShift 20s ease infinite;
+    color: lavender;
+    padding: 20px;
+}
+
+table {
+    width: 80%;
+    margin: 0 auto;
+    border-collapse: separate;
+    border-spacing: 30px;
+}
+
+td {
+    text-align: center;
+}
+
+/* Logo Section */
+.logo {
+    padding-top: 20vh;
+    padding-bottom: 10vh;
+    text-align: center;
+}
+
+.logo_image {
+    width: 300px;
+    vertical-align: middle;
+    margin-top: -45px;
+}
+
+.logo_text {
+    display: inline-block;
+    margin-left: 5px;
+    text-align: left;
+}
+
+.logo_text h3{
+    font-size: 3rem;
+    margin-bottom: 8px;
+}
+
+.logo_text p{
+    font-size: 2.5rem;
+    margin-left: 20px;
+}
+
+/* Content Section */
+.content {
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 15px;
+    padding: 15px;
+}
+
+.image_container {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.image {
+    width: 15vw;
+    height: 31vh;
+    border-radius: 15px;
+}
+
+.text_container {
+    text-align: left;
+    margin-top: 20px;
+    display: inline-block;
+    vertical-align: top;
+    color: lavender;
+    width: calc(100% - 15vw - 30px);
+}
+
+.text_container h3 {
+    font-size: 1.5rem;
+}
+
+.text_container p {
+    font-size: 1.2rem;
+}
+
+/* Email Section */
+.email_bar {
+    padding: 0;
+}
+
+.email_input {
+    width: 40%;
+    padding: 10px;
+    border: 1px solid lavender;
+    border-radius: 5px;
+    font-size: 1rem;
+    margin-right: 10px;
+    margin-bottom: 120px;
+    background-color: lavender;
+    color: darkslateblue;
+    text-align: center;
+}
+
+.email_input:focus {
+    border-color: darkslateblue;
+    border-width: 2px;
+    outline: 2px solid lavender;
+}
+
+.subscribe_btn {
+    padding: 10px 20px;
+    background-color: cornflowerblue;
+    color: lavender;
+    border: 2px solid lavender;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.subscribe_btn:hover {
+    background-color: lavender;
+    color: cornflowerblue;
+}
+
+/* Footer Section */
+footer {
+    background-color: black;
+    color: lavender;
+    padding: 5px 0;
+    text-align: center;
+}
+
+.footer_table {
+    width: 40%;
+    margin-top: 15px;
+    border-collapse: collapse;
+}
+
+.footer_link_items {
+    padding: 0;
+    margin: 0;
+}
+
+.footer_link_items a {
+    color: lavender;
+    text-decoration: none;
+    display: block;
+    transition: color 0.3s;
+}
+
+.footer_table td {
+    padding: 5px;
+}
+
+@media (min-width: 769px) and (max-width: 1424px) {
+
+    .content {
+        text-align: center;
+    }
+
+    .image_container {
+        width: 28vw;
+        height: auto;
+        margin: 1vw;
+    }
+
+    .image {
+        width: 28vw;
+        height: 32vh;
+        max-height: 100%;
+    }
+
+    .text_container {
+        width: 30vw;
+        height: 10vh;
+        text-align: center;
+        padding: 10px;
+        margin-bottom: 12vh;
+    }
+
+    .text_container h3 {
+        margin: 0;
+        text-align: center;
+    }
+
+    .text_container p {
+        margin: 0;
+        text-align: center;
+    }
+
+    .email_input {
+        width: 60%;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .logo_text {
+        text-align: center;
+    }
+
+    .logo_text h3{
+        font-size: 3rem;
+        margin: 10px;
+    }
+
+    .logo_text p{
+        font-size: 2.5rem;
+        margin: 1vw;
+    }
+
+    .content {
+        display: block;
+        margin-bottom: 20px;
+    }
+
+    .image_container {
+        margin: 1vw;
+    }
+
+    .image {
+        width: 50vw;
+        height: 35vh;
+    }
+
+    .text_container h3 {
+        text-align: center;
+        margin-top: 1px;
+    }
+
+    .text_container p {
+        text-align: center;
+        margin-top: 5px;
+    }
+
+    .email_input {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .subscribe_btn{
+        margin-bottom: 100px;
+    }
+
+    .footer_table {
+        width: 80%;
+    }
+}
